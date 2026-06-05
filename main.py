@@ -112,5 +112,5 @@ async def on_ready():
     print(f'البوت العام شغال وجاهز باسم: {bot.user.name}')
 
 # ضع التوكن الخاص ببوتك هنا
-bot.run("YOUR_BOT_TOKEN_HERE")
+bot.run("MTUxMjUyMjcxODg0OTkyOTM4OA.GDnocA.JIbgQcL0ZKAB7ZR__vVyUl6mdzSCtLI13FbaU0")
 
