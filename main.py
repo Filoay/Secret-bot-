@@ -4,6 +4,9 @@ import asyncio
 import json
 import os
 
+# 1. قراءة التوكين بشكل آمن من الـ GitHub Secrets
+TOKEN = os.environ.get('DISCORD_TOKEN')
+
 intents = discord.Intents.default()
 intents.guilds = True
 intents.guild_messages = True
@@ -111,6 +114,5 @@ async def unlock(ctx, *, password_input: str):
 async def on_ready():
     print(f'البوت العام شغال وجاهز باسم: {bot.user.name}')
 
-# ضع التوكن الخاص ببوتك هنا
-bot.run("MTUxMjUyMjcxODg0OTkyOTM4OA.Gcf3Ax.59hx4RU2d4BUdLGEC8s5MEG72veLek_c86wQs8")
-
+# 2. تشغيل البوت باستخدام المتغير الآمن بدلاً من كتابة التوكين هنا
+bot.run(TOKEN)
